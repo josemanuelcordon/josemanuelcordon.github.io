@@ -33,7 +33,6 @@
 }
 .titulo:hover .cont2 {
     color: black;
-    height: 150px;
     width:100%;
     transition: .8s ease;
     opacity: 100%;
