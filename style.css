@@ -37,3 +37,8 @@
     transition: .8s ease;
     opacity: 100%;
 }
+
+.logo {
+    width: 20px;
+    height: 20px;
+}
