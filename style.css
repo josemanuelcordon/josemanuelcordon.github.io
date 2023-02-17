@@ -64,9 +64,11 @@ header {
 
 .foto_personal {
     grid-column: 1/ 3;
-    width: 60%;
+    width:500px;
     height: 20vh; 
     border: 1px solid black;
+    max-width:100%;
+    min-height: 200px;
     
 }
 .biografia {
