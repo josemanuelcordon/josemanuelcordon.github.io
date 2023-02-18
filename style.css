@@ -41,13 +41,15 @@ header {
     height: 50px;
     border-radius:30px;
     margin-bottom: 10%;
+    display: flex;
     
 }
 
 
 .desplegable {
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 5px;
     align-items: center;
     justify-items: center;
     flex-direction: column;
@@ -55,7 +57,7 @@ header {
     height: 3rem;
     border: 0;
     background: transparent;
-    gap: .65rem;
+    gap: .4rem;
 
 }
 
@@ -104,6 +106,10 @@ header {
 
 .menu:hover {
     background-color: rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.desplegable:hover {
     cursor: pointer;
 }
 
