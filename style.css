@@ -118,6 +118,23 @@ header {
     height: 50px;
     background-color:  #F38181;
     position:static; 
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+}
+
+.boton_github {
+    margin-right: 15px;
+    border-radius: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.github {
+    width: 20px;
+    height: 20px;
 }
 
 .menu:hover {
@@ -142,4 +159,11 @@ header {
 .menu:hover div:last-child{
     transform: rotate(-45deg);
 
+}
+
+.boton_github:hover {
+    width: 30px;
+    height: 30px;
+    background-color: #e65c5c49 ;
+    transition: 1s ease;
 }
