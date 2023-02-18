@@ -15,7 +15,7 @@
 
       </h1>
         <section class = "menu" >
-          <button class="desplegable">
+          <button type="button" class="desplegable" onclick="desplegarMenu()">
             <div></div>
             <div></div>
             <div></div>
@@ -24,6 +24,7 @@
         </section>
       
     </section>
+    <div id="interfaz"></div>
   </header>
   <body>
     <section class="main_page">
@@ -37,4 +38,18 @@
   <footer class = "pie">
     Hola que tal
   </footer>
+
+  <script>
+    
+      var val = document-getElementById("interfaz").style.display;
+      function desplegarMenu() {
+        if(val=="none") {
+          val = "block";
+        } else {
+          val= "none";
+        }
+        document.getElementById('interfaz').style.display = val;
+      }
+  </script>
+
 </html>

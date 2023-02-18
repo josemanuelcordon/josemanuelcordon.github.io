@@ -70,7 +70,16 @@ header {
     transition: all .5s;
     transform-origin: left;
 }
-
+#interfaz {
+    position:absolute;
+    margin-left:65vh;
+    width:100%;
+    display: none;
+    height: 400px;
+    margin-right: 5vh;
+    background-color: white;
+    margin-top:60px;
+}
 
 
 
