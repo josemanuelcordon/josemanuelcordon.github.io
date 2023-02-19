@@ -205,8 +205,44 @@ header {
 
 }
 .yyy {
-    margin-left: 10px;
-    padding: 4px 15px;
-    border-radius: 15px;
+    background: #EAFFD0; 
+    color: #95E1D3; 
+    border: 2px solid #95E1D3; 
+    padding: 16px 20px;
+    border-radius: 3px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
 
+}
+
+.yyy:hover {
+    color: #F38181;
+    cursor: pointer;
+}
+
+.yyy::after {
+    content: "";
+    background: #95E1D3;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+
+.yyy:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
 }
