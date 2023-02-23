@@ -14,17 +14,23 @@
         <p class="subtitulo"> Desarrollador de aplicaciones Web</p>
 
       </h1>
-        <section class = "menu" >
-          <button type="button" class="desplegable" onclick="desplegarMenu()">
+      <nav class="barra">
+        <section class = "menu" onclick="desplegarMenu()">
+          <button type="button" class="desplegable" >
             <div></div>
             <div></div>
             <div></div>
           </button>
           
         </section>
+        <nav id="iconos"> 
+          <img class ="imagen_contacto" src="img/icono_contacto.png">
+          <img class ="imagen_correo" src="img/buzon.png">
+        </nav>
+      </nav>
+        
       
     </section>
-    <div id="interfaz"></div>
   </header>
   <body>
     <section class="main_page">
@@ -50,24 +56,19 @@
       </button>
     </section>
     
-    <section class="contacto">  
-      <button class="yyy" >
-        CONTACTAR
-      </button>
-    </section>
   </footer>
   
 
   <script>
     
-      var val = document-getElementById("interfaz").style.display;
+      let val = document.getElementById("iconos").style.display;
       function desplegarMenu() {
         if(val=="none") {
-          val = "block";
+          val = "flex";
         } else {
           val= "none";
         }
-        document.getElementById('interfaz').style.display = val;
+        document.getElementById('iconos').style.display = val;
       }
   </script>
 
