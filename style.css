@@ -107,11 +107,13 @@ header {
 
 @keyframes slidein {
     from {
-      margin-left: 100%;
+      opacity: 0;
+      margin-left: 40vh;
       width: 300%
     }
   
     to {
+        
       margin-left: 5vh;
       width: 100%;
     }
