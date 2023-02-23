@@ -82,6 +82,7 @@ header {
     height: calc(100vh - 120px);
     background-color: pink;
     flex-direction: column;
+    overflow:hidden;
 
    
 }
@@ -107,9 +108,9 @@ header {
 
 @keyframes slidein {
     from {
+      margin-left: 200px;
       opacity: 0;
-      margin-left: 40vh;
-      width: 300%
+      width: 100%;
     }
   
     to {
@@ -141,30 +142,37 @@ header {
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
+    animation-name: navbar;
+    animation-duration: 2s;
+    overflow: hidden;
 }
 
-.imagen_contacto {
-    width:25px;
-    height:25px;
-    margin-top:10px;
-}
 
-.imagen_correo {
+
+.icono {
     width:25px;
     height:25px;
     margin-top: 20%;
+    
+    
+    
 }
 
-.imagen_contacto:hover {
+
+.icono:hover {
     transform:scale(1.2);
     transition: .2s linear;
     cursor: pointer;
 }
-.imagen_correo:hover {
-    transform:scale(1.2);
-    transition: .2s linear;
-    cursor: pointer;
+@keyframes navbar {
+    from {
+        opacity: 0;
+    }
+    to {
+        
+    }
 }
+
 .pie {
     width:100%;
     height: 50px;
