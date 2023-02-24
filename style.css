@@ -100,8 +100,8 @@ header {
 .profesion {
     font-size: 250%;
     margin-left: 5vh;
-    font-weight: bold;
-    color: #FCE38A;
+    font-weight: bold; 
+    color: aquamarine;
     animation-duration: 2s;
     animation-name: slidein;
 }
@@ -110,13 +110,13 @@ header {
     from {
       margin-left: 200px;
       opacity: 0;
-      width: 100%;
+      width:100%;
     }
   
     to {
         
       margin-left: 5vh;
-      width: 100%;
+    
     }
   }
 
@@ -124,8 +124,56 @@ header {
     display: flex;
     flex-grow:1;
     flex-direction: row;
+    align-items: flex-start;
 }
 
+.section1 {
+    flex-grow:1;
+    
+}
+
+.section2 {
+    margin-top: 20px;
+    flex-grow:1;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    row-gap: 20px;
+
+}
+.skill1 {
+    height: 100%;
+    font-size: 20px;
+    animation-duration: 1s;
+    animation-name: skill;
+}
+.skill2 {
+    height: 100%;
+
+    font-size: 20px;
+    animation-duration: 1s;
+    animation-name: skill;
+}
+.skill3 {
+    height: 100%;
+    font-size: 20px;
+    animation-duration: 1s;
+    animation-name: skill;
+}
+.skill4 {
+    height: 100%;
+    font-size: 20px;
+    animation-duration: 1s;
+    animation-name: skill;
+}
+
+@keyframes skill {
+    from {
+      margin-left: 200px;
+    }
+}
 
 .barra {
     position:relative;
@@ -169,6 +217,7 @@ header {
         opacity: 0;
     }
     to {
+
         
     }
 }
@@ -267,7 +316,7 @@ header {
 .nomoverse {
     width:50px;
 }
-@media (width <= 600px) {
+@media screen and (max-width:600px) {
     .main_page {
         background-color: black;
     }
