@@ -316,8 +316,4 @@ header {
 .nomoverse {
     width:50px;
 }
-@media screen and (max-width:900px) {
-    .main_page {
-        background-color: black;
-    }
-}
+
