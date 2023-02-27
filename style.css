@@ -62,7 +62,7 @@ header {
 }
 
 #nav-bar {
-    position: fixed;
+    position: absolute;
     display: none;
     flex-direction: column;
     align-self:flex-start;
@@ -72,8 +72,6 @@ header {
     justify-content: center;
     align-items: center;
     row-gap: 30px;
-    animation-name: navigation;
-    animation-duration: 1.2s smooth;
 }
 
 
@@ -104,10 +102,9 @@ header {
     margin-top: 5vh;;
     margin-left: 5vh;
     margin-right: 5vh;
-    max-width: 60vh;
     font-weight: bold;
     color: white;
-    border-bottom: 5px solid white;
+    border-bottom: 2px solid white;
 }
 
 .profesion {
@@ -122,12 +119,13 @@ header {
 @keyframes slidein {
     from {
       margin-left: 200px;
+      width:100%;
     }
   
     to {
         
-      margin-left: 5vh;
-    
+        margin-left: 5vh;
+        width: 100%;
     }
   }
 
