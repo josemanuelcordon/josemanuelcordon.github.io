@@ -8,12 +8,6 @@
   </head>
   <header>
     <section class="titulo">
-      <h1 class="cont">
-        JOSÉ MANUEL CORDÓN CASTILLO
-        <br>
-        <p class="subtitulo"> Desarrollador de aplicaciones Web</p>
-
-      </h1>
       <nav class="barra">
         <section class = "menu" onclick="desplegarMenu()">
           <button type="button" class="desplegable" >
@@ -23,13 +17,12 @@
           </button>
           
         </section>
-        <nav id="iconos"> 
-          <img class ="icono" src="img/icono_contacto.png">
-          <img class ="icono" src="img/buzon.png">
-        </nav>
-      </nav>
-        
-      
+    </section>
+    <section id="nav-bar">
+      <a href="#" class ="menu-links">Sobre Mí</a>
+      <a href="#" class ="menu-links">Proyectos</a>
+      <a href="#" class ="menu-links">Contacto</a>
+      <img class="salir" src ="img/cruz.png" onclick="desplegarMenu()">
     </section>
   </header>
   <body>
@@ -77,14 +70,14 @@
 
   <script>
     
-      let val = document.getElementById("iconos").style.display;
+      let val = document.getElementsById("nav-bar").style.display;
       function desplegarMenu() {
         if(val=="none") {
           val = "flex";
         } else {
           val= "none";
         }
-        document.getElementById('iconos').style.display = val;
+        document.getElementsById('nav-bar').style.display = val;
       }
   </script>
 
