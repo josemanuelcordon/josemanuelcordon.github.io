@@ -111,6 +111,9 @@ header {
     z-index: 1;
     overflow: hidden;
     margin-bottom: 5px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #F38181;
 }
 
 .container-links-page:nth-child(odd)::after {
@@ -157,13 +160,6 @@ header {
     cursor:pointer;
   }
 
-.menu-links {
-    font-size: 30px;
-    text-decoration: none;
-    color: #F38181;
-    
-}
-
 .salir {
     width: 30px;
     height: 30px;
@@ -181,14 +177,12 @@ header {
 
 
 
-.main_page {
+.intro__page {
     display: flex;
     height: calc(100vh - 120px);
     background-color: pink;
     flex-direction: column;
-    overflow:hidden;
-
-   
+    overflow-x:hidden;
 }
 .nombre {
     font-size: 300%;
@@ -376,5 +370,9 @@ header {
     to {}
 }
 
+.about__me {
+    width: 100vh;
+    height: 100vh;
+}
 
 
