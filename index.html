@@ -77,16 +77,16 @@
   
 
   <script>
-    
-      let val = document.getElementById("nav-bar").style.display;
-      
-      function desplegarMenu() {
-        if(val=="none") {
-          val = "flex";
+    let contador = 0;
+    function desplegarMenu() {
+        
+        if (contador == 0) {
+            document.getElementById('nav-bar').style.transform = "translateY(100vh)";
+            contador = 1;
         } else {
-          val= "none";
+          document.getElementById('nav-bar').style.transform = "translateY(-100vh)";
+          contador = 0;
         }
-        document.getElementById('nav-bar').style.display = val;
       }
   </script>
 

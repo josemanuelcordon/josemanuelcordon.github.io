@@ -94,15 +94,17 @@ header {
 
 #nav-bar {
     position: fixed;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-self:flex-start;
     width: 100%;
     height: 100vh;
-    background-color: rgba(128, 128, 128, 0.373);
+    bottom: 100vh;
+    background-color: #e14c2a;
     justify-content: space-around;
     align-items: center;
     z-index:2;
+    transition: .6s ease-in;
     
 }
 
@@ -122,8 +124,9 @@ header {
     margin-bottom: 5px;
     font-size: 30px;
     text-decoration: none;
-    color: #F38181;
+    color: white;
     font-weight: bold;
+    
 }
 
 .container-links-page:nth-child(odd)::after {
@@ -149,7 +152,7 @@ header {
     height:100%;
     z-index: -1;
     text-align: center;
-    background-color: #e14c2a7c;
+    background-color: #FD841F;
     position:absolute;
     z-index: -1;
     display:block;
@@ -158,6 +161,7 @@ header {
     top: 0;
     bottom: 0;
     transition: all .5s smooth;
+    
     
 
 }
@@ -169,12 +173,10 @@ header {
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
     cursor:pointer;
+    
 
   }
 
-.container-links-page:nth-child(even):hover {
-    color:white;
-}
 
 .salir {
     width: 30px;
@@ -197,7 +199,7 @@ header {
     grid-template-rows:  repeat(2,100vh);
     background-size: cover;
     margin-top: -70px;
-    
+    overflow-y:hidden;
 }
 
 .intro__page {
