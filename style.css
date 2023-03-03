@@ -256,98 +256,47 @@ header {
 
 
 
-
-
+footer {
+    background-color: transparent;
+    transform: translateY(-70px);
+    display: flex;
+    justify-content: center;
+}
 
 .pie {
-    position:static;
-    width:100%;
-    height: 50px;
-    background-color:#F38181;
-    opacity:100;
     position:absolute;
-    display: flex;
-    flex-direction:row-reverse;
-    align-items: center;
-}
-
-.boton_github {
-    margin-right: 15px;
-    border-radius: 30px;
     display:flex;
-    align-items: center;
-    position:relative;
-    background-color: #F38181;
-    border: none;
-}
-
-.github {
-    width: 20px;
-    height: 20px;
-}
-
-
-
-
-.boton_github:hover {
-    padding-left: 5px;
-    width: 30px;
-    height: 30px;
-    transition: .3s linear;
-    background-color: #FCE38A;
-    cursor: pointer;
-    box-shadow: 0px 4px 2px 0px;
-}
-
-.boton_twitter {
-    margin-right: 15px;
-    border-radius: 30px;
-    display:flex;
-    align-items: center;
-    position:relative;
-    background-color: #F38181;
-    border: none;
-}
-
-.twitter {
-    width: 20px;
-    height: 20px;
-}
-
-.boton_twitter:hover {
-    padding-left: 5px;
-    width: 30px;
-    height: 30px;
-    transition: .3s linear;
-    background-color: #00acee;
-    cursor: pointer;
-    box-shadow: 0px 4px 2px 0px;
-}
-
-.contacto {
-    width:100%;
-    align-self:center;
-
-}
-
-.nomoverse {
-    width:50px;
-}
-
-.submarino {
-    width: 50px;
+    width:40%;
+    border-radius:40px;
     height: 50px;
-    margin-left: 40vh;
-    margin-top: 60px;
-    animation-duration: 2s;
-    animation-name: submarine;
+    background-color:#3d3a3a82;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-@keyframes submarine {
-    from {
-        margin-left:5vh;
-    }
-    to {}
+.boton {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.github {
+    width:20px;
+    height:20px;
+}
+.twitter {
+    width:20px;
+    height:20px;
+}
+
+.boton:hover {
+    background-color:white;
+    transition: .6s linear;
+    box-shadow: 0px 2px 0px 1px;
 }
 
 
