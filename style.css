@@ -194,8 +194,7 @@ header {
 .page__distribution {
     display:grid;
     background-image: url("img/intro.jpg");
-    height:200vh;
-    grid-template-rows:  repeat(2,1fr);
+    grid-template-rows:  repeat(2,100vh);
     background-size: cover;
     margin-top: -70px;
     
@@ -211,7 +210,7 @@ header {
 #about__me {
 }
 .nombre {
-    font-size: 400%;
+    font-size: 300%;
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -245,9 +244,14 @@ header {
 .bottom_main {
     display: flex;
     flex-grow:1;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
+    object-fit: scale-down;
 }
+.img__intro {
+    height: 200px;
+}
+
 
 
 
