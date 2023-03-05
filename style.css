@@ -41,6 +41,29 @@ header {
     display: flex;
     
 }
+.desplegable {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 5px;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .4rem;
+
+}
+
+.desplegable > div {
+    background: white;
+    height: 2px;
+    width: 25px;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
 
 .menu:hover {
     transition: .4s linear;
@@ -68,29 +91,7 @@ header {
 }
 
 
-.desplegable {
-    display: flex;
-    margin-top: 15px;
-    margin-left: 5px;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
-    width: 3rem;
-    height: 3rem;
-    border: 0;
-    background: transparent;
-    gap: .4rem;
 
-}
-
-.desplegable > div {
-    background: white;
-    height: 2px;
-    width: 25px;
-    border-radius: 5px;
-    transition: all .5s;
-    transform-origin: left;
-}
 
 #nav-bar {
     position: fixed;
@@ -178,18 +179,6 @@ header {
   }
 
 
-.salir {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 10px;
-}
-
-
-.salir:hover {
-    transform: scale(1.3);
-    transition: .8s smooth;
-    cursor: pointer;
-}
 
 
 
@@ -262,6 +251,7 @@ header {
     border-radius: 5px;
     transition: all .5s smooth;
     overflow-x: hidden;
+    transition: all .35s ease-out;
 }
 
 .barrita::after {
@@ -270,12 +260,11 @@ header {
     height:100%;
     background-color: white;
     position:absolute;
-    display:block;
     left: 100%;
     right: -100%;
     top: 0;
     bottom: 0;
-    transition: all .5s smooth;
+    transition: all .35s ease-in;
 }
 
 .gustos_buttons:hover {
@@ -284,7 +273,7 @@ header {
 .gustos_buttons:hover .barrita::after {
     right:0;
     left:0;
-    transition: all .35s;
+    transition: all .35s ease-in;
 }
 
 .nombre {
