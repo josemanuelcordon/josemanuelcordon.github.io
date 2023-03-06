@@ -56,7 +56,7 @@
           es el problem solving. No acabé la carrera, pero allí descubrí que mi verdadera vocación era la informática.
         </p>
         <nav class="gustos_nav">
-          <button  type ="button" class="gustos_buttons">
+          <button  type ="button" class="gustos_buttons" onclick = "desplegarJuegos()">
             Juegos
             <section class="barrita"></section>
           </button>
@@ -64,9 +64,25 @@
             <section class="barrita"></section>
           </button>
         </nav>
+        <section class="desplegables_botones">
+          <div id="desplegable_transparente">
+            <a class= "links_trailers" href = "https://www.youtube.com/watch?v=QQ825MfC-AU">
+              <img src = "/img/bioshock.png">
+            </a>
+            <a class= "links_trailers" href = "https://www.youtube.com/watch?v=QQ825MfC-AU">
+              <img src = "/img/the witcher.png">
+            </a>
+            <a class= "links_trailers" href = "https://www.youtube.com/watch?v=QQ825MfC-AU">
+              <img src = "/img/hollow.png">
+            </a>
+          </div>
+          <div class="deplegable_juegos"></div>
+        </section>
+      </section>
     </section>
-    </section>
+    <section class="fondo2"> 
     
+    </section>
     
     
   </body>
@@ -96,6 +112,17 @@
         } else {
           document.getElementById('nav-bar').style.transform = "translateY(-100vh)";
           contador = 0;
+        }
+      }
+    let contador2 = 0;  
+    function desplegarJuegos() {
+        
+      if (contador2 == 0) {
+        document.getElementById('desplegable_transparente').style.transform = "translateX(0)";
+        contador2 = 1;
+      } else {
+        document.getElementById('desplegable_transparente').style.transform = "translateX(-100%)";
+        contador2 = 0;
         }
       }
   </script>

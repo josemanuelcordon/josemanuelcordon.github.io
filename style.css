@@ -101,7 +101,7 @@ header {
     width: 100%;
     height: 100vh;
     bottom: 100vh;
-    background-color: #e14c2a;
+    background-color: #4c4772;
     justify-content: space-around;
     align-items: center;
     z-index:2;
@@ -140,11 +140,12 @@ header {
     position:absolute;
     z-index: -1;
     display:block;
+    border-radius: 20px;
     left: -100%;
     right: 100%;
     top: 0;
     bottom: 0;
-    transition: all .5s smooth;
+    transition: all .35s ease-in-out;
 
 }
 .container-links-page:nth-child(even)::after {
@@ -159,9 +160,10 @@ header {
     display:block;
     left: 100%;
     right: -100%;
+    border-radius: 20px;
     top: 0;
     bottom: 0;
-    transition: all .5s smooth;
+    transition: all .35s ease-in-out;
     
     
 
@@ -188,13 +190,11 @@ header {
     grid-template-rows:  repeat(2,100vh);
     background-size: cover;
     margin-top: -70px;
-    overflow-y:hidden;
 }
 
 .intro__page {
     display: flex;
     flex-direction: column;
-    overflow-x:hidden;
     text-shadow: -5px -2px 15px #FD841F;
     
 }
@@ -221,7 +221,7 @@ header {
     font-weight: bold;
     font-size: 15px;
     width: 60%;
-    text-align: center;;
+    text-align: center;
 }
 .gustos_nav {
     width: 80%;
@@ -265,7 +265,8 @@ header {
     top: 0;
     bottom: 0;
     transition: all .35s ease-in;
-}
+} 
+
 
 .gustos_buttons:hover {
     cursor: pointer;
@@ -275,6 +276,7 @@ header {
     left:0;
     transition: all .35s ease-in;
 }
+
 
 .nombre {
     font-size: 300%;
@@ -311,16 +313,61 @@ header {
 
 .bottom_main {
     display: flex;
-    flex-grow:1;
     align-items: center;
     justify-content: center;
-    object-fit: scale-down;
+    height: 50vh;
+    width:100%;
 }
 .img__intro {
-    height: 200px;
+    height: 100%;
+    width:50%;
+    max-width: 400px;;
+}
+
+.fondo2 {
+    display:grid;
+    background-image: url("img/fondo2.jpg");
+    grid-template-rows:  repeat(2,100vh);
+    background-size:cover;
+    overflow-y:hidden;
+}
+
+.desplegables_botones {
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+
+#desplegable_transparente {
+    height: 80%;
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .45s ease-in-out;
+    transform: translateX(-100%);
 }
 
 
+.links_trailers img {
+    width:100%;
+    height:100%;
+    transition: all .45 linear;
+}
+
+
+#desplegable_transparente a {
+    width:25%;
+    height:35%;
+    transition: all .45 linear;
+}
+
+.deplegable_juegos {
+    width:50%;
+    height:80%;
+    background-color: black;
+}
 
 footer {
     background-color: transparent;
