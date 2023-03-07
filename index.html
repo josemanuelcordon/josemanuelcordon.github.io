@@ -50,9 +50,9 @@
         
       </section>
       <section id="about__me">
-        <p class="titulo_about_me">Un poquito de historia</p>
+        <p id="titulo_about_me">Un poquito de historia</p>
         <p class="biografia">Soy José Manuel, desarrollador web y programador. Desde pequeñín he sentido curiosidad
-          acerca del funcionamiento y los algoritmos de los ordenadores. Por ello, decidí estudiar matemáticas, pues uno de m is puntos fuertes
+          acerca del funcionamiento y los algoritmos de los ordenadores. Por ello, decidí estudiar matemáticas, pues uno de mis puntos fuertes
           es el problem solving. No acabé la carrera, pero allí descubrí que mi verdadera vocación era la informática.
         </p>
         <nav class="gustos_nav">
@@ -114,6 +114,7 @@
   
 
   <script>
+    let tamanoPantalla = window.innerHeight;
     let contador = 0;
     function desplegarMenu() {
         
@@ -147,6 +148,19 @@
         contador3 = 0;
         }
     }
+    
+
+
+    window.addEventListener('scroll', function(){
+      let animacion = document.getElementById('titulo_about_me');
+      let posicionTitulo = animacion.getBoundingClientRect().top;
+      console.log(posicionTitulo);
+      if ((posicionTitulo < tamanoPantalla) && (posicionTitulo > 0)) {
+        animacion.style.animation = 'mover-biografía 1s ease-in-out';
+      } else {
+        animacion.style.animation = '';
+      }
+    })
   </script>
 
 </html>

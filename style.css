@@ -208,13 +208,23 @@ header {
     
 
 }
-.titulo_about_me {
+
+#titulo_about_me {
     margin-top: 70px;
     font-size: 45px;
     text-shadow: -5px 2px 15px #FD841F;
     color: white;
     font-weight: bold;
+    text-align: center;
+    user-select: none;
     
+}
+
+@keyframes mover-biografía {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
 }
 .biografia {
     margin-top: 20px;
@@ -223,11 +233,11 @@ header {
     font-size: 15px;
     width: 60%;
     text-align: center;
+    user-select: none;
 }
 .gustos_nav {
     width: 80%;
     height:70px;
-
     border-radius: 10px;
     background-color: transparent;
     margin-top: 50px;
@@ -243,6 +253,7 @@ header {
     border: none;
     display:flex;
     flex-direction: column;
+    user-select: none;
    
 }
 .barrita {
@@ -288,6 +299,7 @@ header {
     color: white;
     border-bottom: 2px solid white;
     text-align: center;
+    user-select: none;
 }
 
 
@@ -298,6 +310,7 @@ header {
     animation-duration: 2s;
     animation-name: slidein;
     text-align: center;
+    user-select: none;
 }
 
 @keyframes slidein {
