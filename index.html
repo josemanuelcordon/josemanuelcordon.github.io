@@ -60,12 +60,13 @@
             Juegos
             <section class="barrita"></section>
           </button>
-          <button  type ="button" class="gustos_buttons">Animales
+          <button  type ="button" class="gustos_buttons" onclick = "desplegarAnimales()">
+            Animales
             <section class="barrita"></section>
           </button>
         </nav>
         <section class="desplegables_botones">
-          <div id="desplegable_transparente">
+          <div id="desplegable_juegos">
             <a class= "links_trailers" href = "https://www.youtube.com/watch?v=QQ825MfC-AU">
               <img src = "/img/bioshock.png">
             </a>
@@ -76,7 +77,17 @@
               <img src = "/img/hollow.png">
             </a>
           </div>
-          <div class="deplegable_juegos"></div>
+          <div id="deplegable_animales">
+            <a class= "links_trailers" href = "https://www.youtube.com/shorts/VBM_GaTRcxQ">
+              <img src = "/img/perro.webp">
+            </a>
+            <a class= "links_trailers" href = "https://www.youtube.com/shorts/-s7QHSsIouo">
+              <img src = "/img/mono.png">
+            </a>
+            <a class= "links_trailers" href = "https://www.youtube.com/shorts/7CY0Wsb5KLY">
+              <img src = "/img/gato.jpg">
+            </a>
+          </div>
         </section>
       </section>
     </section>
@@ -118,13 +129,24 @@
     function desplegarJuegos() {
         
       if (contador2 == 0) {
-        document.getElementById('desplegable_transparente').style.transform = "translateX(0)";
+        document.getElementById('desplegable_juegos').style.transform = "translateX(0)";
         contador2 = 1;
       } else {
-        document.getElementById('desplegable_transparente').style.transform = "translateX(-100%)";
+        document.getElementById('desplegable_juegos').style.transform = "translateX(-100%)";
         contador2 = 0;
         }
       }
+    
+    let contador3 = 0;  
+    function desplegarAnimales() {
+      if (contador3 == 0) {
+        document.getElementById('deplegable_animales').style.transform = "translateX(0)";
+        contador3 = 1;
+      } else {
+        document.getElementById('deplegable_animales').style.transform = "translateX(100%)";
+        contador3 = 0;
+        }
+    }
   </script>
 
 </html>

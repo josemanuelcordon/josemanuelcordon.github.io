@@ -190,6 +190,7 @@ header {
     grid-template-rows:  repeat(2,100vh);
     background-size: cover;
     margin-top: -70px;
+    overflow: hidden;
 }
 
 .intro__page {
@@ -339,7 +340,7 @@ header {
     align-items: center;
 }
 
-#desplegable_transparente {
+#desplegable_juegos {
     height: 80%;
     width:50%;
     display:flex;
@@ -349,6 +350,12 @@ header {
     transform: translateX(-100%);
 }
 
+.links_trailers {
+    width:25%;
+    height:35%;
+    transition: all .45 linear;
+    object-fit: fill;
+}
 
 .links_trailers img {
     width:100%;
@@ -357,16 +364,22 @@ header {
 }
 
 
-#desplegable_transparente a {
+
+
+#deplegable_animales {
+    height: 80%;
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .45s ease-in-out;
+    transform: translateX(100%);
+}
+
+#desplegable_animales a {
     width:25%;
     height:35%;
     transition: all .45 linear;
-}
-
-.deplegable_juegos {
-    width:50%;
-    height:80%;
-    background-color: black;
 }
 
 footer {
