@@ -22,7 +22,7 @@
       <a href="#about__me" class = "container-links-page" onclick="desplegarMenu()">
         SOBRE MÍ
       </a>
-      <a href="#" class = "container-links-page" onclick="desplegarMenu()">
+      <a href="#skills_section" class = "container-links-page" onclick="desplegarMenu()">
         SKILLS
       </a>
       <a href="#" class = "container-links-page" onclick="desplegarMenu()">
@@ -39,7 +39,7 @@
         <p class="nombre">Jose Manuel <br> 
           Cordon Castillo 
         </p>
-        <p class="profesion">
+        <p id="profesion">
           Web Developer
           <br>
           Programmer
@@ -78,21 +78,51 @@
             </a>
           </div>
           <div id="deplegable_animales">
-            <a class= "links_trailers" href = "https://www.youtube.com/shorts/VBM_GaTRcxQ">
-              <img src = "/img/perro.webp">
+            <a class= "links_trailers" href = "https://www.youtube.com/shorts/7CY0Wsb5KLY">
+              <img src = "/img/gato.gif">
             </a>
-            <a class= "links_trailers" href = "https://www.youtube.com/shorts/-s7QHSsIouo">
+           <a class= "links_trailers" href = "https://www.youtube.com/shorts/-s7QHSsIouo">
               <img src = "/img/mono.png">
             </a>
-            <a class= "links_trailers" href = "https://www.youtube.com/shorts/7CY0Wsb5KLY">
-              <img src = "/img/gato.jpg">
+            <a class= "links_trailers" href = "https://www.youtube.com/shorts/VBM_GaTRcxQ">
+              <img src = "/img/perro.gif">
             </a>
+            
           </div>
         </section>
       </section>
     </section>
     <section class="fondo2"> 
-    
+      <section id="skills_section">
+        <section class="skill"> JAVA </section>
+        <img class = "tuberia" src = "img/tuberia.png">
+        <section class="indicador-skill">
+          <img src="img/mario.jpg" id="mario">
+        </section>
+        <section class="skill"> HTML </section>
+        <img class = "tuberia" src = "img/tuberia.png">
+        <section class="indicador-skill">
+          <img src="img/luigi.png" id="luigi">
+        </section>
+        <section class="skill"> CSS </section>
+        <img class = "tuberia" src = "img/tuberia.png">
+        <section class="indicador-skill">
+          <img src="img/toad.png" id="toad">
+        </section>
+        <section class="skill"> HASKELL</section>
+        <img class = "tuberia" src = "img/tuberia.png">
+        <section class="indicador-skill">
+          <img src="img/estrella.png" id="bowser">
+        </section>
+        
+        
+
+
+
+
+
+        
+      </section>
     </section>
     
     
@@ -154,9 +184,59 @@
     window.addEventListener('scroll', function(){
       let animacion = document.getElementById('titulo_about_me');
       let posicionTitulo = animacion.getBoundingClientRect().top;
-      console.log(posicionTitulo);
       if ((posicionTitulo < tamanoPantalla) && (posicionTitulo > 0)) {
         animacion.style.animation = 'mover-biografía 1s ease-in-out';
+      } else {
+        animacion.style.animation = '';
+      }
+    })
+
+    window.addEventListener('scroll', function(){
+      let animacion = document.getElementById('profesion');
+      let posicionProfesion = animacion.getBoundingClientRect().top;
+      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -100)) {
+        animacion.style.animation = 'slidein 1s ease-in-out';
+        animacion.style.opacity = '100';
+      } else {
+        animacion.style.animation = '';
+      }
+    })
+
+    window.addEventListener('scroll', function(){
+      let animacion = document.getElementById('mario');
+      let posicionProfesion = animacion.getBoundingClientRect().top;
+      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -1000000)) {
+        animacion.style.animation = 'mario-bros 1s ease-in';
+      } else {
+        animacion.style.animation = '';
+      }
+    })
+
+    window.addEventListener('scroll', function(){
+      let animacion = document.getElementById('luigi');
+      let posicionProfesion = animacion.getBoundingClientRect().top;
+      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -1000000)) {
+        animacion.style.animation = 'mario-bros 1s ease-in';
+      } else {
+        animacion.style.animation = '';
+      }
+    })
+
+    window.addEventListener('scroll', function(){
+      let animacion = document.getElementById('toad');
+      let posicionProfesion = animacion.getBoundingClientRect().top;
+      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -1000000)) {
+        animacion.style.animation = 'mario-bros 1s ease-in';
+      } else {
+        animacion.style.animation = '';
+      }
+    })
+
+    window.addEventListener('scroll', function(){
+      let animacion = document.getElementById('bowser');
+      let posicionProfesion = animacion.getBoundingClientRect().top;
+      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -1000000)) {
+        animacion.style.animation = 'mario-bros 1s ease-in';
       } else {
         animacion.style.animation = '';
       }

@@ -11,7 +11,6 @@ html {
 
 
 header {
-    background-color: #A8D8EA;
     display:flex;
     height:70px;
     justify-content: center;
@@ -303,14 +302,13 @@ header {
 }
 
 
-.profesion {
+#profesion {
     font-size: 250%;
     font-weight: bold; 
     color: #FCE38A;
-    animation-duration: 2s;
-    animation-name: slidein;
     text-align: center;
     user-select: none;
+    opacity:0;
 }
 
 @keyframes slidein {
@@ -320,8 +318,7 @@ header {
     }
   
     to {
-        
-        width: 100%;
+      width: 100%;
     }
   }
 
@@ -338,13 +335,7 @@ header {
     max-width: 400px;;
 }
 
-.fondo2 {
-    display:grid;
-    background-image: url("img/fondo2.jpg");
-    grid-template-rows:  repeat(2,100vh);
-    background-size:cover;
-    overflow-y:hidden;
-}
+
 
 .desplegables_botones {
     height:100%;
@@ -393,6 +384,80 @@ header {
     width:25%;
     height:35%;
     transition: all .45 linear;
+}
+.fondo2 {
+    display:grid;
+    width:100%;
+    background-image: url("img/fondo2.jpg");
+    grid-template-rows:  repeat(2,100vh);
+    background-size:cover;
+    overflow-y:hidden;
+}
+
+#skills_section {
+    height: 100vh;
+    display:grid;
+    grid-template-rows: repeat(4,calc(100vh/4));
+    grid-template-columns: 15% 15% auto;
+}
+
+
+
+.skill {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vh;
+    font-weight: bold;
+    color: white;
+    
+}
+.tuberia {
+    height:100%;
+}
+
+.indicador-skill {
+    position: relative;
+    display:flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#mario {
+    height:60%;
+    position: absolute;
+    right:30%;
+
+
+}
+
+
+
+#luigi {
+    height:55%;
+    position: absolute;
+    right:50%;
+}
+
+
+#toad {
+    height:60%;
+    position: absolute;
+    right:60%
+}
+
+
+#bowser {
+    height:60%;
+    position: absolute;
+    right:50%;
+}
+
+@keyframes mario-bros {
+    from {
+        right:100%;
+        opacity:40%;
+    }
 }
 
 footer {
