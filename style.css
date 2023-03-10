@@ -459,6 +459,34 @@ header {
         opacity:40%;
     }
 }
+#end-page {
+    height: 100vh;
+    display:grid;
+    grid-template-rows: 100px repeat(3,calc((100vh - 170px)/3));
+    grid-template-columns: repeat(2,auto);
+    
+    grid-auto-flow: column;
+    
+    
+}
+
+.container-project {
+    height:90%;
+    position: relative;
+    width:90%;
+    margin-left:20%;
+    background-color: grey;
+    border-radius: 20px;
+    box-shadow:0px 0px 10px;
+    max-width: 400px;
+    opacity: 80%;
+}
+
+
+.container-project:hover {
+    transform: translate(10px,-10px);
+    box-shadow: #FD841F -10px 10px 20px;
+}
 
 footer {
     background-color: transparent;
