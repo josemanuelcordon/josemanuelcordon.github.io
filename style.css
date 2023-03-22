@@ -7,7 +7,12 @@
 html {
     scroll-behavior: smooth;
 }
-
+:root {
+    --fondo1: #FFDEB9;
+    --fondo2: #FE6244;
+    --calculator: #7149c6c9;
+    --buttons: #FC2947;
+}
 
 
 header {
@@ -144,7 +149,7 @@ header {
     right: 100%;
     top: 0;
     bottom: 0;
-    transition: all .35s ease-in-out;
+    transition: all .6s ease-in-out;
 
 }
 .container-links-page:nth-child(even)::after {
@@ -162,7 +167,7 @@ header {
     border-radius: 20px;
     top: 0;
     bottom: 0;
-    transition: all .35s ease-in-out;
+    transition: all .6s ease-in-out;
     
     
 
@@ -173,7 +178,7 @@ header {
     top: 0;
     bottom: 0;
     -webkit-transition: all 0.35s;
-    transition: all 0.35s;
+    transition: all 0.6s;
     cursor:pointer;
     
 
@@ -462,31 +467,68 @@ header {
 #end-page {
     height: 100vh;
     display:grid;
-    grid-template-rows: 100px repeat(3,calc((100vh - 170px)/3));
-    grid-template-columns: repeat(2,auto);
-    
-    grid-auto-flow: column;
-    
+    place-items: center;
+}
+#calculadora {
+    display: grid;
+    height: 400px;
+    width: 300px;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 60px);
+    row-gap: 5px;
+    background-color: var(--calculator);
+    border-radius: 40px;
+    border: solid 2px white;
+    box-shadow: 5px 10px 200px;
+}
+
+#calculadora :nth-child(n+2) {
+    position:relative;
+    height: 60px;
+    width:60px;
+    border-radius: 30px;
+    margin-top: 50px;
+    font-size: 1.8rem;
+    border: 2px black solid;
+    background: var(--buttons);
+    color: white;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+    user-select: none;
     
 }
 
-.container-project {
-    height:90%;
-    position: relative;
-    width:90%;
-    margin-left:20%;
-    background-color: grey;
-    border-radius: 20px;
-    box-shadow:0px 0px 10px;
-    max-width: 400px;
-    opacity: 80%;
+#pantalla {
+    grid-column: 1/5 ;
+    display:flex;
+    text-align: right;
+    padding: 10px;
+    background-color: var(--fondo1);
+    width: 270px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 1.6rem;
+    font-weight: bold;
+    opacity: 70%;
+    user-select: none;
 }
 
-
-.container-project:hover {
-    transform: translate(10px,-10px);
-    box-shadow: #FD841F -10px 10px 20px;
+#calculadora > input:nth-child(n+2):hover {
+    box-shadow: 0px 4px 10px black;
+    animation: rotate linear .3s;
+    cursor: pointer;
 }
+
+@keyframes rotate {
+    25% {
+        transform: rotate(30deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+}
+
 
 footer {
     background-color: transparent;

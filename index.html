@@ -116,15 +116,24 @@
         </section>
       </section>
       <section id="end-page">
-        <div></div>
-        <section class="container-project">
-
-        </section>
-        <section class="container-project">
-
-        </section>
-        <section class="container-project">
-
+        <section id="calculadora">
+          <input type="text" id="pantalla" readonly="readonly"></input>
+          <input type="button" value ="7" onclick= "pantalla.value += '7' "></input>
+          <input type="button" value ="8" onclick= "pantalla.value += '8' "></input>
+          <input type="button" value ="9" onclick= "pantalla.value += '9' "></input>
+          <input type="button" id ="supr" value ="C" onclick= "pantalla.value = '' "></input>
+          <input type="button" value ="4" onclick= "pantalla.value += '4' "></input>
+          <input type="button" value ="5" onclick= "pantalla.value += '5' "></input>
+          <input type="button" value ="6" onclick= "pantalla.value += '6' "></input>
+          <input type="button" id ="operador1" value ="+"></input>
+          <input type="button" value ="1" onclick= "pantalla.value += '1' "></input>
+          <input type="button" value ="2" onclick= "pantalla.value += '2' "></input>
+          <input type="button" value ="3" onclick= "pantalla.value += '3' "></input>
+          <input type="button" id ="operador2" value ="-"></input>
+          <input type="button" value ="0" onclick= "pantalla.value += '0' "></input>
+          <input type="button" id ="operador3" value ="*"></input>
+          <input type="button" id ="operador4" value ="/"></input>
+          <input type="button" id ="equal" value ="="></input>
         </section>
       </section>
     </section>
@@ -237,6 +246,44 @@
         animacion.style.animation = 'mario-bros 1s ease-in';
       } 
     })
+
+    let operador1 = document.getElementById('operador1');
+    let operador2 = document.getElementById('operador2');
+    let operador3 = document.getElementById('operador3');
+    let operador4 = document.getElementById('operador4');
+    let supr = document.getElementById('supr');
+        let equal = document.getElementById('equal');
+        let operacion = "";
+
+        operador1.addEventListener('click', () => {
+            operacion += pantalla.value + operador1.value;
+            pantalla.value = '';
+        })
+
+        operador2.addEventListener('click', () => {
+            operacion += pantalla.value + operador2.value;
+            pantalla.value = '';
+        })
+
+        operador3.addEventListener('click', () => {
+            operacion += pantalla.value + operador3.value;
+            pantalla.value = '';
+        })
+
+        operador4.addEventListener('click', () => {
+            operacion += pantalla.value + operador4.value;
+            pantalla.value = '';
+        })
+
+        equal.addEventListener('click', () => {
+            operacion += pantalla.value;
+            pantalla.value = eval(operacion);
+            operacion = "";
+        })
+
+        supr.addEventListener('click', () => {
+            operacion = "";
+        })
   </script>
 
 </html>
