@@ -127,7 +127,7 @@
               </article>
             </article>
             <article class="coming_coon">COMING <br>
-              <span class="multicolor"> SOON ...</span>
+              <span id="multicolor"> SOON ...</span>
             </article>
           </section>
        </article>
@@ -242,6 +242,14 @@
         animacion.style.animation = 'mario-bros 1s ease-in';
       } 
     })
+
+    const soon = document.getElementById('multicolor');
+    setInterval(() => {
+      r = Math.floor(Math.random() *255);
+      g = Math.floor(Math.random() *255);
+      b = Math.floor(Math.random() *255);
+      soon.style.color="rgb("+r+","+g+","+b+")";
+    },2000)
 
     
   </script>

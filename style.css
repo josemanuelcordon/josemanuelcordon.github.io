@@ -494,7 +494,7 @@ header {
     position:absolute;
     color:white;
     bottom:5px;
-    right:5px;
+    left:5px;
     font-style:oblique;
     font-weight: bold;
     font-size: 1.3rem;
@@ -535,14 +535,17 @@ header {
     height:100%;
   
     text-align:center;
-    font-size:200%;
+    font-size:10vh;
     margin-top:5%;
     color:white;
     font-weight: bolder;
 
 }
 
-
+.multicolor {
+    margin-left: 20px;
+    transition: all .3s ease-in-out;
+}
 
 
 footer {
