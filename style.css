@@ -542,9 +542,11 @@ header {
 
 }
 
-.multicolor {
-    margin-left: 20px;
-    transition: all .3s ease-in-out;
+#multicolor {
+    margin-left: 50px;
+    transition: color .35s linear;
+    animation: escala 1s infinite linear;
+    font-style: italic;
 }
 
 
