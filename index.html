@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://fonts.cdnfonts.com/css/handwriting" rel="stylesheet">
     <title>Jose Manuel</title>
   </head>
   <header>
@@ -50,11 +51,10 @@
         
       </section>
       <section id="about__me">
-        <p id="titulo_about_me">Un poquito de historia</p>
+        <p id="titulo_about_me">Historia</p>
         <p class="biografia">Soy José Manuel, desarrollador web y programador. Desde pequeñín he sentido curiosidad
-          acerca del funcionamiento y los algoritmos de los ordenadores. Por ello, decidí estudiar matemáticas, pues uno de mis puntos fuertes
-          es el problem solving. No acabé la carrera, pero allí descubrí que mi verdadera vocación era la informática.
-        </p>
+          por todo el mundo de los algoritmos y la programación. Después de algunos giros de la vida, tras dos años estudiando Matemáticas,
+          acabé impartiendo clases de Matemáticas y estudiando Desarrollo Web.
         <nav class="gustos_nav">
           <button  type ="button" class="gustos_buttons" onclick = "desplegarJuegos()">
             Juegos
@@ -120,9 +120,9 @@
           <section class="proyectos2">
             <article class="primer_proyecto">
               <a class ="enlace_calculadora" href="calculator.html" target="_blank">
-                <img src="img/calcular.png">
+                <img class ="calculadora"src="img/calcular.png">
               </a>
-              <article class="informacion_calculadora">
+              <article id="informacion_calculadora">
                 Primer proyecto que aúna conocimientos básicos de CSS, HTML y JavaScript.
               </article>
             </article>
@@ -251,7 +251,15 @@
       soon.style.color="rgb("+r+","+g+","+b+")";
     },1000)
 
-    
+    window.addEventListener('scroll', function(){
+      let animacion = document.getElementById('informacion_calculadora');
+      let posicionTitulo = animacion.getBoundingClientRect().top;
+      if ((posicionTitulo < tamanoPantalla) && (posicionTitulo > 0)) {
+        animacion.style.animation = 'animacion-texto 1s ease-in-out';
+      } else {
+        animacion.style.animation = '';
+      }
+    })
   </script>
 
 </html>
