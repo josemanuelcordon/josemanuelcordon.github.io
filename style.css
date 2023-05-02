@@ -392,8 +392,9 @@ body {
 .project p {
     text-align: center;
 }
+
 .visitar-button {
-    width:30%;
+    width:80px;
     height:30px;
     border-radius: 25px;
     background-color: var(--cuaternary_color);
@@ -402,6 +403,9 @@ body {
 }
 
 @media (max-width: 920px) {
+    #header {
+        display: none;
+    }
     .navbar {
         width:100vw;
         left:-100%;
