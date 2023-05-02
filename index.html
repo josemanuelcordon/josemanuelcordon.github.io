@@ -1,273 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link href="https://fonts.cdnfonts.com/css/handwriting" rel="stylesheet">
-    <title>Jose Manuel</title>
-  </head>
-  <header>
-    <section class="titulo">
-      
-        <section class = "menu" onclick="desplegarMenu()">
-          <button type="button" class="desplegable" >
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+
+
+    <title>Portfolio</title>
+</head>
+<header id="header" class="header-negro">
+    <section class="logo-section">
+        <img id="logo-negro" class="logo-negro" src="/img/logo-blanco.gif">
+        <img class="logo-blanco" src="/img/logo-negro.gif">
     </section>
-    <section id="nav-bar">
-      
-      <a href="#about__me" class = "container-links-page" onclick="desplegarMenu()">
-        SOBRE MÍ
-      </a>
-      <a href="#skills_section" class = "container-links-page" onclick="desplegarMenu()">
-        SKILLS
-      </a>
-      <a href="#end-page" class = "container-links-page" onclick="desplegarMenu()">
-        PROYECTOS
-      </a>
-      <a href="#end-page" class = "container-links-page" onclick="desplegarMenu()">
-        CONTACTO
-      </a>
-    </section>
-  </header>
-  <body>
-    <section class="page__distribution">
-      <section class="intro__page">
-        <p class="nombre">Jose Manuel <br> 
-          Cordon Castillo 
-        </p>
-        <p id="profesion">
-          Web Developer
-          <br>
-          Programmer
-        </p>
-        <section class="bottom_main">
-        <img src="img/calcifer.gif" class="img__intro">
-        </section>
+    
+</header>
+<body>  
+    <nav id="navbar1" class="navbar">
+        <button type="button" id="hamburguesa">
+              <svg id="hamburguesa1" class="hamburguesa-blanca-active"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              <svg id="cruz" class="cruz-blanca-unactive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+              </svg>
+        </button>
+        <ul>
+            <a href="#home">
+                <li id ="homeBtn" class="nav-link texto-blanco">HOME</li>
+            </a>
+            <a href="#portfolio">
+                <li id ="portfolioBtn" class="nav-link texto-blanco">PORTFOLIO</li>
+            </a>
+            <a href="#skills">
+                <li id ="skillsBtn" class="nav-link texto-blanco">SKILLS</li>
+            </a>
+            <a href="#projects">
+                <li id ="projectsBtn" class="nav-link texto-blanco">PROJECTS</li>
+            </a>
+        </ul>
         
-      </section>
-      <section id="about__me">
-        <p id="titulo_about_me">Historia</p>
-        <p class="biografia">Soy José Manuel, desarrollador web y programador. Desde pequeñín he sentido curiosidad
-          por todo el mundo de los algoritmos y la programación. Después de algunos giros de la vida, tras dos años estudiando Matemáticas,
-          acabé impartiendo clases de Matemáticas y estudiando Desarrollo Web.
-        <nav class="gustos_nav">
-          <button  type ="button" class="gustos_buttons" onclick = "desplegarJuegos()">
-            Juegos
-            <section class="barrita"></section>
-          </button>
-          <button  type ="button" class="gustos_buttons" onclick = "desplegarAnimales()">
-            Animales
-            <section class="barrita"></section>
-          </button>
-        </nav>
-        <section class="desplegables_botones">
-          <div id="desplegable_juegos">
-            <a class= "links_trailers" href = "https://www.youtube.com/watch?v=QQ825MfC-AU">
-              <img src = "/img/bioshock.png">
-            </a>
-            <a class= "links_trailers" href = "https://www.youtube.com/watch?v=nDiD6M2cQ2k">
-              <img src = "/img/the witcher.png">
-            </a>
-            <a class= "links_trailers" href = "https://www.youtube.com/watch?v=UAO2urG23S4">
-              <img src = "/img/hollow.png">
-            </a>
-          </div>
-          <div id="deplegable_animales">
-            <a class= "links_trailers" href = "https://www.youtube.com/shorts/7CY0Wsb5KLY">
-              <img src = "/img/gato.gif">
-            </a>
-           <a class= "links_trailers" href = "https://www.youtube.com/shorts/-s7QHSsIouo">
-              <img src = "/img/mono.png">
-            </a>
-            <a class= "links_trailers" href = "https://www.youtube.com/shorts/VBM_GaTRcxQ">
-              <img src = "/img/perro.gif">
-            </a>
+    </nav>
+    <main id="inner-page-wrapper" class="full-screen">
+        <section id="home">
+            <h1 class="nombre">JOSÉ MANUEL CORDÓN</h1>
+            <section class="vissible-window">
+                <h3 class ="profesion">Designer!</h3>
+            </section>
+            <ul class="wrapper">
+                <li class="icon facebook">
+                    <span class="tooltip">Facebook</span>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </li>
+        
+                <li class="icon twitter">
+                    <span class="tooltip">Twitter</span>
+                    <span><i class="fab fa-twitter"></i></span>
+                </li>
+        
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+        
+                <li class="icon youtube">
+                    <span class="tooltip">Youtube</span>
+                    <span><i class="fab fa-youtube"></i></span>
+                </li>
+            </ul>
+        
+        </section>
+        <section id="portfolio"> 
+        </section>
+        <section id="skills">
             
-          </div>
         </section>
-      </section>
-    </section>
-    <section class="fondo2"> 
-      <section id="skills_section">
-        <section class="skill"> JAVA </section>
-        <img class = "tuberia" src = "img/tuberia.png">
-        <section class="indicador-skill">
-          <img src="img/mario.jpg" id="mario">
+        <section id="projects">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                    <div class="swiper-slide">
+                        <section class="swiper-wrapper1">
+                            <article class="project">
+                                <img src="img/camara.png">
+                                <h4>POKÉDEX</h4>
+                                <p>Proyecto para aprender a fetchear datos de una API y 
+                                    cómo tratarlos para estilizarlos en la página web</p>
+                                <button class="visitar-button">Visitar</button>
+                            </article>
+                            <article class="project">
+                                <img src="img/calcular.png">
+                                <h4>CALCULADORA</h4>
+                                <p>Primer proyecto para entender JavaScript y el manejo del documento html con el
+                                    lenguaje.
+                                </p>
+                                <button class="visitar-button">Visitar</button>
+                            </article>
+                            <article class="project">
+                                <img src="img/camara.png">
+                                <h4>POKÉDEX</h4>
+                                <p>Proyecto para aprender a fetchear datos de una API y 
+                                    cómo tratarlos para estilizarlos en la página web</p>
+                                <button class="visitar-button">Visitar</button>
+                            </article>
+                        </section>
+                        
+                    </div>
+                    <div class="swiper-slide">
+                        Hola que tal
+                    </div>
+                    <div class="swiper-slide">
+
+                    </div>
+                
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+              
+                <!-- If we need navigation buttons
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+              </div>
         </section>
-        <section class="skill"> HTML </section>
-        <img class = "tuberia" src = "img/tuberia.png">
-        <section class="indicador-skill">
-          <img src="img/luigi.png" id="luigi">
-        </section>
-        <section class="skill"> CSS </section>
-        <img class = "tuberia" src = "img/tuberia.png">
-        <section class="indicador-skill">
-          <img src="img/toad.png" id="toad">
-        </section>
-        <section class="skill"> HASKELL</section>
-        <img class = "tuberia" src = "img/tuberia.png">
-        <section class="indicador-skill">
-          <img src="img/estrella.png" id="bowser">
-        </section>
-      </section>
-      <section id="end-page">
-       <article class="proyectos"> 
-          <section class="proyectos2">
-            <article class="primer_proyecto">
-              <a class ="enlace_calculadora" href="calculator.html" target="_blank">
-                <img class ="calculadora"src="img/calcular.png">
-              </a>
-              <article id="informacion_calculadora">
-                Primer proyecto que aúna conocimientos básicos de CSS, HTML y JavaScript.
-              </article>
-            </article>
-            <article class="primer_proyecto">
-              <a class ="enlace_calculadora" href="Delivery/index.html" target="_blank">
-                <img class ="calculadora" src="img/moto.png">
-              </a>
-              <article id="informacion_calculadora">
-                Segundo proyecto. Página de delivery para practicar diseño, CSS y resposiveness.
-              </article>
-            </article>
-            <article class="coming_coon">COMING <br>
-              <span id="multicolor"> SOON ...</span>
-            </article>
-          </section>
-       </article>
-      </section>
-    </section>
+    </main>
     
-    
-  </body>
-  <footer>
-    <section class="pie">
-      <a href="https://github.com/josemanuelcordon" class="boton">
-        <img class="github" src="img/github.png">
-      </a>
-      <a href="#" class="boton">
-        <img class="twitter" src="img/twitter.png">
-      </a>
-    </section>
-    
-    
-    
-    
-  </footer>
-  
-
-  <script>
-    let tamanoPantalla = window.innerHeight;
-    let contador = 0;
-    function desplegarMenu() {
-        
-        if (contador == 0) {
-            document.getElementById('nav-bar').style.transform = "translateY(100vh)";
-            contador = 1;
-        } else {
-          document.getElementById('nav-bar').style.transform = "translateY(-100vh)";
-          contador = 0;
-        }
-      }
-    let contador2 = 0;  
-    function desplegarJuegos() {
-        
-      if (contador2 == 0) {
-        document.getElementById('desplegable_juegos').style.transform = "translateX(0)";
-        contador2 = 1;
-      } else {
-        document.getElementById('desplegable_juegos').style.transform = "translateX(-100%)";
-        contador2 = 0;
-        }
-      }
-    
-    let contador3 = 0;  
-    function desplegarAnimales() {
-      if (contador3 == 0) {
-        document.getElementById('deplegable_animales').style.transform = "translateX(0)";
-        contador3 = 1;
-      } else {
-        document.getElementById('deplegable_animales').style.transform = "translateX(100%)";
-        contador3 = 0;
-        }
-    }
-    
-
-
-    window.addEventListener('scroll', function(){
-      let animacion = document.getElementById('titulo_about_me');
-      let posicionTitulo = animacion.getBoundingClientRect().top;
-      if ((posicionTitulo < tamanoPantalla) && (posicionTitulo > 0)) {
-        animacion.style.animation = 'mover-biografía 1s ease-in-out';
-      } else {
-        animacion.style.animation = '';
-      }
-    })
-
-    window.addEventListener('scroll', function(){
-      let animacion = document.getElementById('profesion');
-      let posicionProfesion = animacion.getBoundingClientRect().top;
-      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -100)) {
-        animacion.style.animation = 'slidein 1s ease-in-out';
-        animacion.style.opacity = '100';
-      } else {
-        animacion.style.animation = '';
-      }
-    })
-
-    window.addEventListener('scroll', function(){
-      let animacion = document.getElementById('mario');
-      let posicionProfesion = animacion.getBoundingClientRect().top;
-      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -1000000)) {
-        animacion.style.animation = 'mario-bros 1s ease-in';
-      }
-    })
-
-    window.addEventListener('scroll', function(){
-      let animacion = document.getElementById('luigi');
-      let posicionProfesion = animacion.getBoundingClientRect().top;
-      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -1000000)) {
-        animacion.style.animation = 'mario-bros 1s ease-in';
-      } 
-    })
-
-    window.addEventListener('scroll', function(){
-      let animacion = document.getElementById('toad');
-      let posicionProfesion = animacion.getBoundingClientRect().top;
-      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -1000000)) {
-        animacion.style.animation = 'mario-bros 1s ease-in';
-      } 
-    })
-
-    window.addEventListener('scroll', function(){
-      let animacion = document.getElementById('bowser');
-      let posicionProfesion = animacion.getBoundingClientRect().top;
-      if ((posicionProfesion < tamanoPantalla) && (posicionProfesion > -1000000)) {
-        animacion.style.animation = 'mario-bros 1s ease-in';
-      } 
-    })
-
-    const soon = document.getElementById('multicolor');
-    setInterval(() => {
-      r = Math.floor(Math.random() *255);
-      g = Math.floor(Math.random() *255);
-      b = Math.floor(Math.random() *255);
-      soon.style.color="rgb("+r+","+g+","+b+")";
-    },1000)
-
-    window.addEventListener('scroll', function(){
-      let animacion = document.getElementById('informacion_calculadora');
-      let posicionTitulo = animacion.getBoundingClientRect().top;
-      if ((posicionTitulo < tamanoPantalla) && (posicionTitulo > 0)) {
-        animacion.style.animation = 'animacion-texto 1s ease-in-out';
-      } else {
-        animacion.style.animation = '';
-      }
-    })
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/index.js"></script>
+</body>
 
 </html>
