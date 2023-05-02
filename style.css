@@ -404,7 +404,7 @@ body {
 
 @media (max-width: 920px) {
     #header {
-        display: none;
+        display:none;
     }
     .navbar {
         width:100vw;

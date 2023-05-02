@@ -1,5 +1,5 @@
-const nav_button = document.getElementById("hamburguesa")
-const nav_bar = document.getElementById("navbar1")
+const nav_button = document.getElementById('hamburguesa')
+const nav_bar = document.getElementById('navbar')
 const cruz = document.getElementById('cruz')
 const hamburguesa = document.getElementById('hamburguesa1')
 const page = document.getElementById('inner-page-wrapper')
