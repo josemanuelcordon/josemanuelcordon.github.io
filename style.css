@@ -403,10 +403,10 @@ body {
 }
 
 @media (max-width: 920px) {
-    #header {
+    /*#header {
         display:none;
-    }
-    /*
+    } */
+    
     .navbar {
         width:100vw;
         left:-100%;
@@ -432,7 +432,7 @@ body {
 
     .profesion {
         font-size: 2.3rem;
-    }*/
+    }
     .project p {
         display:none;
     } 
