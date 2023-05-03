@@ -214,14 +214,16 @@ body {
     color: var(--secondary_color);
     display:flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
 
 .nombre {
-    word-break:break-all;
+    margin-top:80px;
+    display:flex;
+    justify-content: center;
+    width:90%;
+    height:100px;
     font-size: 4.1rem;
-    text-align: center;
-    margin-top:200px;
 }
 
 .vissible-window {
@@ -431,6 +433,17 @@ body {
 
     .profesion {
         font-size: 2.3rem;
+    }
+
+    .swiper-wrapper1 {
+        flex-direction: column;
+
+    }
+
+    .project {
+        flex-direction: row;
+        width: 90%;
+        padding:0;
     }
     .project p {
         display:none;
