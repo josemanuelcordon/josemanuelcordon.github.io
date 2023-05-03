@@ -102,9 +102,10 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    effect: 'flip',
-    flipEffect: {
+    effect: 'coverflow',
+    coverflowEffect: {
+        rotate: 90,
         slideShadows: false,
-    },
+  },
   });
   

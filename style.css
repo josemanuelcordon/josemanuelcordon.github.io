@@ -417,15 +417,14 @@ body {
     .nombre {
         font-size: 3rem;
     }
-    .notfull {
-        width:0;
-    }
 
     .navbar.navbar-active #hamburguesa {
         top:-60px;
         right:10px;;
     }
-    
+    .notfull{
+        width:100vw;
+    }
     .nav-link {
         width:100vw;
     } 
