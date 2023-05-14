@@ -373,37 +373,37 @@ body {
   }
   
   #wrapper > .shape:nth-child(1) {
-    background-color: rgb(176, 190, 197);
+    background-color: #eb6f1f;
     z-index: 2;
   }
   
   #wrapper > .shape:nth-child(2) {
-    background-color: rgb(245, 245, 245);
+    background-color: #c13b33;
     z-index: 2;
   }
   
   #wrapper > .shape:nth-child(3) {
-    background-color: rgb(155, 93, 229);
+    background-color: #ffc63d;
     z-index: 1;
   }
   
   #wrapper > .shape:nth-child(4) {
-    background-color: rgb(241, 91, 181);
+    background-color: #259569;
     z-index: 2;
   }
   
   #wrapper > .shape:nth-child(5) {
-    background-color: rgb(254, 228, 64);
+    background-color: #096d74;
     z-index: 2;
   }
   
   #wrapper > .shape:nth-child(6) {
-    background-color: rgb(0, 187, 249);
+    background-color: #a083d2;
     z-index: 2;
   }
   
   #wrapper > .shape:nth-child(7) {
-    background-color: rgb(0, 245, 212);
+    background-color: #465b65;
     z-index: 2;
   }
   
